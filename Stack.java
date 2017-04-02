@@ -6,5 +6,6 @@ public class Stack
   public Stack(maxSize)
   {
     stack = new int[maxSize];
+    this.maxSize = maxSize;
   }
 }
