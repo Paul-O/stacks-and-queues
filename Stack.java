@@ -5,7 +5,7 @@ public class Stack
   {
     
   }
-  public void push(int a)
+  public void push(int a) // add item to top of stack
   {
     Node i = new Node(a);
     if(root == null)
@@ -18,11 +18,11 @@ public class Stack
       root = i;
     }
   }
-  public int peek()
+  public int peek() // use top in stack without removing it
   {
     return root.getData();
   }
-  public int pop()
+  public int pop() // remove item from top of stack
   {
     Node temp = root;
     if(root == null)
