@@ -1,27 +1,43 @@
 public class Stack
 {
-  int top = 0;
-  int[] stack;
-  int maxSize;
-  public Stack(int maxSize)
+  Node root = null;
+  public Stack()
   {
-    stack = new int[maxSize];
-    this.maxSize = maxSize;
+    
   }
-  public void push(int a) // method takes in a parameter
+  public void push(int a)
   {
-    stack[top] = a;
-    top++;
+    Node i = new Node(a);
+    if(root == null)
+    {
+      root = i;
+    }
+    else
+    {
+      i.setNext(root);
+      root = i;
+    }
   }
   public int peek()
   {
-    int x = stack[top - 1];
-    return x;
+    return root.getData();
   }
   public int pop()
   {
-    int y = stack[top - 1];
-    top--;
-    return y;
+    Node temp = root;
+    if(root == null;)
+    {
+      return 0;
+    }
+    else if(root.getNext() == null)
+    {
+      root = null;
+      return temp.getData();
+    }
+    else
+    {
+      root = root.getNext();
+      return temp.getData();
+    }
   }
 }
