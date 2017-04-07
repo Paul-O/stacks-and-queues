@@ -25,7 +25,7 @@ public class Stack
   public int pop()
   {
     Node temp = root;
-    if(root == null;)
+    if(root == null)
     {
       return 0;
     }
@@ -38,6 +38,15 @@ public class Stack
     {
       root = root.getNext();
       return temp.getData();
+    }
+  }
+  public void print()
+  {
+    Node t = root;
+    while(t != null)
+    {
+      System.out.println(t.getData());
+      t = t.getNext();
     }
   }
 }

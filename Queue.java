@@ -20,6 +20,6 @@ public class Queue
   }
   public int dequeue()
   {
-    
+    return 0;
   }
 }
