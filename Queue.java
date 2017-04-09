@@ -5,7 +5,7 @@ public class Queue
   {
     
   }
-  public void enqueue(int b) // add item to fron of the list
+  public void enqueue(int b) // add item to front of the list
   {
     Node j = new Node(b);
     if(head == null)
