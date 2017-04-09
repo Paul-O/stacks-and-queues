@@ -26,6 +26,25 @@ public class Queue
   {
     return head.getData();
   }
+  public int dequeue()
+  {
+    Node temp = head;
+    if(head == null)
+    {
+      return 0;
+    }
+    else if(head.getNext() == null)
+    {
+      head = null;
+      return temp.getData();
+    }
+    else
+    {
+      head = head.getNext();
+      temp.setNext(null);
+      return temp.getData();
+    }
+  }
   public void print()
   {
     Node u = head;
