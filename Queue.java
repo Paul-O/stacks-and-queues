@@ -14,8 +14,12 @@ public class Queue
     }
     else
     {
-      j.setNext(head);
-      head = j;
+      Node temp = head;
+      while(temp != null)
+      {
+        temp = temp.getNext();
+      }
+      temp = j;
     }
   }
   public void print()
