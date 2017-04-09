@@ -15,11 +15,11 @@ public class Queue
     else
     {
       Node temp = head;
-      while(temp != null)
+      while(temp.getNext() != null)
       {
         temp = temp.getNext();
       }
-      temp = j;
+      temp.setNext(j);
     }
   }
   public void print()
