@@ -14,5 +14,17 @@ public class Main
       q.enqueue(s.pop());
     }
     q.print();
+    System.out.println(" ");
+    Stack r = new Stack();
+    Stack w = new Stack();
+    for(int d = 1; d < 4; d++)
+    {
+      r.push(q.dequeue());
+    }
+    for(int e = 1; e < 4; e++)
+    {
+      w.push(r.pop());
+    }
+    w.print();
   }
 }
