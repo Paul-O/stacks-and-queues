@@ -9,5 +9,7 @@ public class Main
     s.push(113);
     s.push(5);
     s.print();
+    
+    
   }
 }

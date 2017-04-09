@@ -1,25 +1,21 @@
 public class Queue
 {
-  int index = 0;
-  int[] queue;
-  int max;
-  public Queue(int max)
+  Node head;
+  public Queue()
   {
-    queue = new int[max];
-    this.max = max;
+    
   }
-  public void enqueue(int b) // method takes in a parameter
+  public void enqueue(int b) // add item to fron of the list
   {
-    queue[index] = b;
-    index++;
-  }
-  public int peek()
-  {
-    int m = queue[0];
-    return m;
-  }
-  public int dequeue()
-  {
-    return 0;
+    Node j = new Node(b);
+    if(head == null)
+    {
+      head = j;
+    }
+    else
+    {
+      j.setNext(head);
+      head = j;
+    }
   }
 }
