@@ -18,4 +18,13 @@ public class Queue
       head = j;
     }
   }
+  public void print()
+  {
+    Node u = head;
+    while(u != null)
+    {
+      System.out.println(u.getData());
+      u = u.getNext();
+    }
+  }
 }
