@@ -22,6 +22,10 @@ public class Queue
       temp.setNext(j);
     }
   }
+  public int peek()
+  {
+    return head.getData();
+  }
   public void print()
   {
     Node u = head;
